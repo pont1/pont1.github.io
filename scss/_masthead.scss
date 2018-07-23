@@ -1,0 +1,40 @@
+// Styling for the masthead
+header.masthead {
+  padding-top: 10rem;
+  padding-bottom: calc(10rem - 56px);
+  background-image: url('../img/csgo-money-hero.jpg');
+  background-position: top center;
+  background-attachment: fixed;
+  @include background-cover;
+  hr {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  h1 {
+    font-size: 2rem;
+    text-shadow: 1px 1px 20px rgba(0, 0, 0, 0.4)
+  }
+  p {
+    font-weight: 300;
+    color: rgba(255, 255, 255, 0.88)
+  }
+  @media (min-width: 768px) {
+    p {
+      font-size: 1.5rem;
+    }
+  }
+  @media (min-width: 992px) {
+    height: 100vh;
+    min-height: 650px;
+    padding-top: 0;
+    padding-bottom: 0;
+    h1 {
+      font-size: 3rem;
+    }
+  }
+  @media (min-width: 1200px) {
+    h1 {
+      font-size: 4rem;
+    }
+  }
+}
